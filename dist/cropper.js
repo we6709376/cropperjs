@@ -5,14 +5,14 @@
  * Copyright 2015-present Chen Fengyuan
  * Released under the MIT license
  *
- * Date: 2019-10-04T04:33:48.372Z
+ * Date: 2019-11-12T07:36:24.696Z
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = global || self, global.Cropper = factory());
-}(this, function () { 'use strict';
+}(this, (function () { 'use strict';
 
   function _typeof(obj) {
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -1187,8 +1187,6 @@
       case 8:
         rotate = -90;
         break;
-
-      default:
     }
 
     return {
@@ -2050,8 +2048,6 @@
             }
 
             break;
-
-          default:
         }
       };
 
@@ -2416,8 +2412,6 @@
           }
 
           break;
-
-        default:
       }
 
       if (renderable) {
@@ -3452,7 +3446,7 @@
         // with its orientation once append it into DOM (#279)
 
         if (!isIOSWebKit) {
-          sizingImage.style.cssText = 'left:0;' + 'max-height:none!important;' + 'max-width:none!important;' + 'min-height:0!important;' + 'min-width:0!important;' + 'opacity:0;' + 'position:absolute;' + 'top:0;' + 'z-index:-1;';
+          sizingImage.style.cssText = 'left:0;' + 'max-height:none!important;' + 'max-width:none!important;' + 'min-height:0!important;' + 'min-width:0!important;' + 'opacity:0;' + 'position:absolute;' + 'top:0;' + 'z-index:-1;' + 'height:0;' + 'width:0;';
           body.appendChild(sizingImage);
         }
       }
@@ -3613,4 +3607,4 @@
 
   return Cropper;
 
-}));
+})));

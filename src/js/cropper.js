@@ -288,6 +288,8 @@ class Cropper {
         + 'position:absolute;'
         + 'top:0;'
         + 'z-index:-1;'
+        + 'height:0;'
+        + 'width:0;'
       );
       body.appendChild(sizingImage);
     }

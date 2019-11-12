@@ -1,5 +1,9 @@
 # Changelog
 
+# 1.5.7 (11 12, 2019)
+
+- 图片尺寸不显示
+
 ## 1.5.6 (Oct 4, 2019)
 
 - Improve event type determining for iOS 13+ (#571).
